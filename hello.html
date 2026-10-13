@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 15px 0 25px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: #172554;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e0f2fe;
+        }
+
+        .contact a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #172554;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Karthikeya</span></h1>
+        <p>CSE-AIML Student | Future AI & ML Engineer</p>
+        <p>Learning programming and building innovative projects.</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                I am a Computer Science student specializing in
+                Artificial Intelligence and Machine Learning.
+                I am interested in programming, web development,
+                artificial intelligence, and solving real-world problems.
+                My goal is to become an AI/ML Engineer and develop
+                useful technology-based solutions.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Python</h3>
+                <p>Learning programming and problem solving.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Creating websites and web page designs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Learning AI and machine learning concepts.</p>
+            </div>
+
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Learning databases and queries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>A website to showcase my skills and achievements.</p>
+            </div>
+
+            <div class="card">
+                <h3>Hospital Appointment System</h3>
+                <p>A project concept for managing patient appointments.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI/ML Projects</h3>
+                <p>Projects I will build while learning AI and ML.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:yourmail@example.com">
+            yourmail@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername"
+            target="_blank">My GitHub Profile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/"
+            target="_blank">My LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Karthikeya | My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
